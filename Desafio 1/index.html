@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Estilo/style.css">
+    <title>Codelândia</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="container-titles">
+                <h1>Codelândia</h1>
+                <h2>blog</h2>
+            </div>
+            <div class="container-search">
+                <img src="/Img/Search-Icon.png" id="idImageSearch" alt="Icone de busca">
+                <input type="text" id="idSearch" placeholder="Pesquisar no blog">
+            </div>
+        </div>
+    </nav>
+    <div class="content-container">
+        <li class="post-container">
+            <div class="date">
+                <p>02 de julho 2021</p>
+                <i class="fa fa-heart" id="idHeart"></i>
+            </div>
+            <div class="title">
+                <h1>Agora é oficial: o Windows 11 está vindo</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Repellendus, dolorum! Veritatis necessitatibus numquam,
+                    voluptatum dolorem sapiente,
+                    veniam reprehenderit vel quaerat vitae esse magnam
+                    harum soluta maiores maxime nemo nisi nesciunt.</p>
+            </div>
+        </li>
+        <li class="post-container">
+            <div class="date">
+                <p>02 de julho 2021</p>
+                <i class="fa fa-heart" id="idHeart"></i>
+            </div>
+            <div class="title">
+                <h1>Tim Berners-Lee vai leiloar código-fonte da web</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Repellendus, dolorum! Veritatis necessitatibus numquam,
+                    voluptatum dolorem sapiente,
+                    veniam reprehenderit vel quaerat vitae esse magnam
+                    harum soluta maiores maxime nemo nisi nesciunt.</p>
+            </div>
+        </li>
+        <li class="post-container">
+            <div class="date">
+                <p>02 de julho 2021</p>
+                <i class="fa fa-heart" id="idHeart"></i>
+            </div>
+            <div class="title">
+                <h1>Tem Firefox novo no pedaço e você vai querer migrar</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Repellendus, dolorum! Veritatis necessitatibus numquam,
+                    voluptatum dolorem sapiente,
+                    veniam reprehenderit vel quaerat vitae esse magnam
+                    harum soluta maiores maxime nemo nisi nesciunt.</p>
+            </div>
+        </li>
+        <li class="post-container">
+            <div class="date">
+                <p>02 de julho 2021</p>
+                <i class="fa fa-heart" id="idHeart"></i>
+            </div>
+            <div class="title">
+                <h1>John McAfee, criador do antivírus McAfee, morre</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Repellendus, dolorum! Veritatis necessitatibus numquam,
+                    voluptatum dolorem sapiente,
+                    veniam reprehenderit vel quaerat vitae esse magnam
+                    harum soluta maiores maxime nemo nisi nesciunt.</p>
+            </div>
+        </li>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.post-container', { delay: 200 });
+        ScrollReveal().reveal('.date', { delay: 400 });
+        ScrollReveal().reveal('.title', { delay: 500 });
+        ScrollReveal().reveal('.content', { delay: 600 });
+</script>
+</body>
+
+</html>
