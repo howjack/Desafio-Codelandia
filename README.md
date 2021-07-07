@@ -3,7 +3,7 @@ Desafio da codelândia de HTML/CSS/JS.
 
 Desafios para aprimorar o conhecimento em front-end.
 
-Instagram do iuri, a pessoa que lançou o desafio: https://www.instagram.com/iuricode/
+Instagram do Iuri, a pessoa que lançou o desafio: https://www.instagram.com/iuricode/
 
 
 Telas  do primeiro desafio:
