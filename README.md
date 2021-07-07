@@ -8,5 +8,10 @@ Instagram da pessoa que lançou o desafio: https://www.instagram.com/iuricode/
 
 Telas  do primeiro desafio:
 
-![Captura da Web_6-7-2021_184636_127 0 0 1](https://user-images.githubusercontent.com/81323315/124670584-91eccb00-de8a-11eb-9884-f45999838e7e.jpeg)
-![Captura da Web_6-7-2021_185422_127 0 0 1](https://user-images.githubusercontent.com/81323315/124671269-9e255800-de8b-11eb-8b00-3397858923d9.jpeg)
+*Lado esquerdo é a versão desktop e o lado direito é a versão mobile(W320px)
+![My Post](https://user-images.githubusercontent.com/81323315/124814783-cf119580-df3c-11eb-8ed1-3518adde8df4.jpg)
+
+Telas do segundo desafio:
+
+*Lado esquerdo é a versão desktop e o lado direito é a versão mobile(W320px)
+![My Post (1)](https://user-images.githubusercontent.com/81323315/124815392-98884a80-df3d-11eb-81d2-1f5cd5d122c6.jpg)
