@@ -8,14 +8,14 @@ Repositorio do desafio: https://github.com/iuricode/desafios-codelandia
 Instagram do Iuri, a pessoa que lançou o desafio: https://www.instagram.com/iuricode/
 
 
-Primeiro desafio: https://codelandia-desafio1.vercel.app/
+Primeiro desafio: https://desafio-codelandia-howjack.vercel.app/
 
 Telas:
 
 *Lado esquerdo é a versão desktop e o lado direito é a versão mobile(W320px)
 ![My Post](https://user-images.githubusercontent.com/81323315/124814783-cf119580-df3c-11eb-8ed1-3518adde8df4.jpg)
 
-Segundo desafio: https://codelandia-desafio2.vercel.app/
+Segundo desafio: https://codelandia-desafio2-howjack.vercel.app/
 
 Telas:
 
