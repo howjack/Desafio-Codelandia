@@ -40,7 +40,7 @@ body {
 .project:hover {
 	z-index: 1;
 	background-color: #f0f0f0;
-	transform: scale(1.7);
+	transform: scale(1.5);
 }
 
 .project img {
