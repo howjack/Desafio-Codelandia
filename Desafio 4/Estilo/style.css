@@ -1,0 +1,210 @@
+/*Variáveis*/
+@font-face {
+	font-family: LatoRegular;
+	src: url(../Fontes/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: LatoBold;
+	src: url(../Fontes/Lato-Bold.ttf);
+}
+@font-face {
+	font-family: MerriRegular;
+	src: url(../Fontes/Merriweather-Regular.ttf);
+}
+
+:root {
+	--green: #04c35c;
+	--blue: #2b6cb0;
+
+	--white: #ffffff;
+	--white300: #f7fafc;
+
+	--dark: #1a202c;
+	--input: #e8e8e8;
+
+	--latoRegular: LatoRegular;
+	--latoBold: LatoBold;
+	--merriRegular: MerriRegular;
+}
+
+/*Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.7rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--merriRegular);
+	margin: 0;
+}
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+button,
+input {
+	border: 0;
+}
+button:focus,
+input:focus {
+	border: 0;
+}
+
+/*Reset*/
+
+body {
+	height: 100vh;
+	font-family: var(--latoRegular);
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.img-container {
+	display: flex;
+	width: 50%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white300);
+}
+
+.img-container img {
+	width: 400px;
+}
+
+.login-container {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+}
+.login-container form {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.login-container h3 {
+	font-family: var(--latoBold);
+	margin: 5px 0;
+}
+.login-container h1 {
+	margin-bottom: 40px;
+}
+
+.login-container label {
+	display: inherit;
+	margin: 5px 0;
+}
+
+.login-container input[type="text"] {
+	width: 100%;
+	padding: 15px 20px;
+	font-size: 16px;
+	margin: 5px 0;
+	border: 1px solid var(--input);
+	border-radius: 5px;
+}
+.login-container button {
+	width: 100%;
+	font-family: var(--latoBold);
+	font-size: 16px;
+	margin: 5px 0;
+	margin-bottom: 15px;
+	padding: 16px 0;
+	border-radius: 5px;
+	color: var(--white);
+}
+.login-container #enter-button {
+	background-color: var(--green);
+}
+.login-container #google-button {
+	background-color: var(--dark);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#google-button img {
+	width: 20px;
+	margin: 0 5px;
+}
+
+.login-container p {
+	position: absolute;
+	bottom: 10%;
+	width: 250px;
+	font-size: 16px;
+	line-height: 19px;
+}
+.forgot-container {
+	display: flex;
+	width: 100%;
+	margin: 10px 0;
+	margin-bottom: 20px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 15px;
+}
+.forgot-container label {
+	margin: 0;
+	align-items: center;
+}
+.forgot-container input[type="checkbox"] {
+	margin: auto;
+	margin-right: 10px;
+	accent-color: var(--blue);
+	width: 15px !important;
+	height: 15px !important;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		height: 93vh;
+	}
+	.img-container {
+		display: none;
+	}
+	.login-container {
+		width: 100%;
+	}
+	.login-container form {
+		width: 320px;
+		padding: 0 5px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.login-container p {
+		bottom: 3%;
+	}
+}
