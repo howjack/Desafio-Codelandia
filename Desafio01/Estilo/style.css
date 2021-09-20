@@ -1,0 +1,133 @@
+@font-face {
+	font-family: Inter-regular;
+	src: url(../Fontes/Inter-Regular.ttf);
+}
+@font-face {
+	font-family: Inter-medium;
+	src: url(../Fontes/Inter-Medium.ttf);
+}
+@font-face {
+	font-family: LexendDeca-regular;
+	src: url(../Fontes/LexendDeca-Regular.ttf);
+}
+:root {
+	/* Cores */
+	--blue-dark: #574ae8;
+	--white: #fff;
+	--background: #f3f5f7;
+
+	--title: #313131;
+	--text: #b6b6b6;
+
+	--linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+
+	/* Fontes */
+	--inter: Inter-regular;
+	--interBold: Inter-medium;
+	--lexend: LexendDeca-regular;
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	background-color: var(--background);
+}
+nav {
+	height: auto;
+	width: 100%;
+	background-image: var(--linear);
+}
+.nav-container {
+	max-width: 60rem;
+	margin: auto;
+	padding: 40px 20px;
+}
+.container-titles {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	color: var(--white);
+	font-size: x-large;
+	font-family: var(--lexend);
+	letter-spacing: 1px;
+}
+.container-search {
+	background-color: rgba(255, 255, 255, 0.3);
+	display: flex;
+	margin-top: 80px;
+	border-radius: 3px;
+}
+#idSearch {
+	opacity: 1;
+	width: 100%;
+	background-color: transparent;
+	padding: 18px 8px;
+	color: var(--white);
+	font-size: medium;
+}
+#idSearch::placeholder {
+	color: rgba(255, 255, 255, 0.4);
+	font-size: medium;
+}
+#idSearch:focus {
+	outline: 0;
+}
+#idImageSearch {
+	width: auto;
+	height: 30px;
+	margin: auto;
+	padding: 0px 12px;
+}
+.content-container {
+	max-width: 60rem;
+	margin: 60px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0px 20px;
+}
+.post-container {
+	height: auto;
+	width: 100%;
+	margin: 20px;
+	background-color: var(--white);
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px -15px;
+}
+.date {
+	margin: 20px;
+	font-family: var(--inter);
+	font-size: medium;
+	color: var(--text);
+	display: flex;
+	justify-content: space-between;
+}
+.date i {
+	font-size: large;
+	color: var(--blue-dark);
+}
+#idHeart:hover {
+	transition: 0.2s;
+	color: #493dd1;
+}
+.title {
+	margin: 20px;
+	font-size: medium;
+	font-family: var(--interBold);
+	color: var(--title);
+}
+.content {
+	margin: 20px;
+	font-size: medium;
+	font-family: var(--inter);
+	color: var(--text);
+	line-height: 2rem;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilo/style.css">
+    <title>Jordan Shoes</title>
+</head>
+
+<body>
+    <header>
+        <div class="desconto-container">
+            <p>Ganhe R$ 10,00 de desconto no frete</p>
+        </div>
+        <div class="nomeDaLoja-container">
+            <h1>Jordan Shoes</h1>
+        </div>
+        <div class="banner-container">
+            <img src="./Img/wallpaper.jpeg" alt="">
+            <div class="bannerContent-container">
+                <h1>A melhor loja de jordan</h1>
+                <div class="textInteractive-container">
+                    <p id="typed"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="products-container">
+        <div class="productsTitle-container">
+            <h1>Destaques</h1>
+            <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+        </div>
+        <div class="productsCards-container">
+            <li class="card">
+                <img src="./Img/1.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 01</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="./Img/2.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 02</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="./Img/3.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 03</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="./Img/4.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 04</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="./Img/5.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 05</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="./Img/6.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 06</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="./Img/7.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 07</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="./Img/8.png" alt="">
+                <div class="descript-container">
+                    <div class="descript2-container">
+                        <h2>Jordan 08</h2>
+                        <p>Novo Conceito</p>
+                        <p>R$290,90</p>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </div>
+    <footer>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    <div id="typed-strings">
+        <p>O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 30
+        });
+    </script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.card', { delay: 200 });
+    </script>
+</body>
+
+</html>
