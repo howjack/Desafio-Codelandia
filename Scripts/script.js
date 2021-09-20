@@ -21,8 +21,6 @@ const projects = [
     },
 ];
 
-console.log(projects);
-
 const app = document.getElementById('app');
 
 projects.forEach(project => {
