@@ -1,15 +1,15 @@
 /*Variáveis*/
 @font-face {
   font-family: MontBold;
-  src: url(/Fontes/Montserrat-Bold.ttf);
+  src: url(../Fontes/Montserrat-Bold.ttf);
 }
 @font-face {
   font-family: MontMedium;
-  src: url(/Fontes/Montserrat-Medium.ttf);
+  src: url(../Fontes/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: MontSemiBold;
-  src: url(/Fontes/Montserrat-SemiBold.ttf);
+  src: url(../Fontes/Montserrat-SemiBold.ttf);
 }
 :root {
   --bgSite: #f6f6f6;
