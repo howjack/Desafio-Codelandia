@@ -1,0 +1,205 @@
+/*Variáveis*/
+@font-face {
+	font-family: LatoRegular;
+	src: url(../Fontes/Lato-Regular.ttf);
+}
+@font-face {
+	font-family: MerriBold;
+	src: url(../Fontes/Merriweather-Bold.ttf);
+}
+@font-face {
+	font-family: MerriRegular;
+	src: url(../Fontes/Merriweather-Regular.ttf);
+}
+
+:root {
+	--bgSite: #d7d4ff;
+	--buttonColor: #6c63ff;
+
+	--white: #ffffff;
+	--white300: #f9f9f9;
+
+	--title: #2b2b2b;
+	--text: #555555;
+
+	--latoRegular: LatoRegular;
+	--merriBold: MerriBold;
+	--merriRegular: MerriRegular;
+}
+
+/*Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+button,
+input {
+	border: 0;
+}
+button:focus,
+input:focus {
+	border: 0;
+}
+/*Reset*/
+
+body {
+	max-width: 1440px;
+	margin: auto;
+	font-family: var(--latoRegular);
+	background-color: var(--bgSite);
+}
+header {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 50px 10px;
+}
+.tittle-container {
+	width: 400px;
+	font-family: var(--latoRegular);
+	margin: 30px 0;
+}
+.tittle-container h1 {
+	font-family: var(--merriRegular);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 47px;
+}
+.tittle-container p {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 32px;
+	margin: 25px 0;
+}
+.tittle-container button {
+	padding: 12px 40px;
+	font-size: 18px;
+	line-height: 24px;
+	color: white;
+	background: var(--buttonColor);
+	box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+	border-radius: 5px;
+}
+header img {
+	width: 500px;
+	margin: 10px 0;
+}
+
+main {
+	background-color: var(--white300);
+	padding: 50px 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+main ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+main li {
+	margin: 15px 0;
+	width: 340px;
+	height: 423px;
+	background-color: var(--white);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.card-image {
+	width: 100%;
+	height: 55%;
+}
+.card-tittle {
+	height: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 20px;
+}
+.card-tittle h2 {
+	font-family: var(--merriBold);
+	font-size: 24px;
+	line-height: 30px;
+}
+.card-tittle p {
+	font-size: 16px;
+	line-height: 30px;
+}
+footer {
+	max-width: 450px;
+    padding: 0 10px;
+	margin: 50px auto;
+}
+form {
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+form h2 {
+	font-family: var(--merriRegular);
+	font-size: 32px;
+	line-height: 40px;
+    margin: 20px;
+}
+form input,
+textarea {
+	width: 100%;
+	font-family: var(--latoRegular);
+	padding: 20px 20px;
+	margin: 10px;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+}
+form button {
+	padding: 12px 40px;
+	font-size: 18px;
+    margin: 10px;
+	line-height: 24px;
+	color: white;
+	background: var(--buttonColor);
+	box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.tittle-container {
+		text-align: center;
+	}
+	main {
+		background-color: var(--white300);
+		padding: 50px 10px;
+	}
+}
