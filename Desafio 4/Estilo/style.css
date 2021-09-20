@@ -183,7 +183,6 @@ main {
 .forgot-container input[type="checkbox"] {
 	margin: auto;
 	margin-right: 10px;
-	accent-color: var(--blue);
 	width: 15px !important;
 	height: 15px !important;
 }
