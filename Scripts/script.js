@@ -27,7 +27,7 @@ const app = document.getElementById('app');
 
 projects.forEach(project => {
     const title = `${project.name} - #${project.nr}`;
-    const imgURL = project.link + "/imageBase.png";
+    const imgURL = project.link + "/ImageBase.png";
 
     const projectEl = document.createElement('a');
     projectEl.classList.add('project');
