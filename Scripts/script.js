@@ -32,7 +32,6 @@ const projects = [
         link: `./Desafio06`
     },
 ];
-console.log(length)
 
 const app = document.getElementById('app');
 
