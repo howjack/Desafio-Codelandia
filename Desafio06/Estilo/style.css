@@ -194,7 +194,7 @@ section .button-container {
 	border: 1px solid var(--white);
 }
 
-@media only screen and (max-width: 1093px) {
+@media only screen and (max-width: 1090px) {
 	main {
 		margin: 0px 25px;
 		display: flex;
@@ -202,16 +202,15 @@ section .button-container {
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 	}
-    main img {
-        margin: 0 30px;
-    }
+	main img {
+		margin: 0 30px;
+	}
 	section {
 		margin: 25px 0;
 	}
-	
 }
 @media only screen and (max-width: 425px) {
-    section .information-container {
+	section .information-container {
 		align-items: center;
 		flex-direction: column;
 	}
