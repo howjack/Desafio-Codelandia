@@ -19,6 +19,11 @@ const projects = [
         name: 'Login Page',
         link: `./Desafio04`
     },
+    {
+        nr: '05',
+        name: 'Studio Ghibli',
+        link: `./Desafio05`
+    },
 ];
 
 const app = document.getElementById('app');
