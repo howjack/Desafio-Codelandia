@@ -1,3 +1,5 @@
+
+
 const projects = [
     {
         nr: '01',
@@ -24,7 +26,13 @@ const projects = [
         name: 'Studio Ghibli',
         link: `./Desafio05`
     },
+    {
+        nr: '06',
+        name: 'Loki',
+        link: `./Desafio06`
+    },
 ];
+console.log(length)
 
 const app = document.getElementById('app');
 
