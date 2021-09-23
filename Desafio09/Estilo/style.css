@@ -20,6 +20,7 @@
 }
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
 	font-size: 1.7rem;
@@ -89,10 +90,36 @@ nav h2 {
 	font-size: 26px;
 	line-height: 34px;
 }
-nav a {
+.menu-container a {
 	margin-left: 30px;
 	font-size: 18px;
 	line-height: 23px;
+}
+nav .burguer-container {
+	display: none;
+	float: right;
+	z-index: 2;
+	margin: 0 10px;
+}
+.burguer-container .burger {
+	width: 30px;
+	height: 5px;
+	margin: 4px 0px;
+	background-color: var(--Tt-white);
+	transition: 0.4s;
+	border-radius: 1px;
+}
+.burguer1 {
+	transform: rotate(45deg) translateY(6px) translateX(7px);
+	transition: 0.4s;
+}
+.burguer2 {
+	opacity: 0;
+	transition: 0.2s;
+}
+.burguer3 {
+	transform: rotate(-45deg) translateY(-6px) translateX(7px);
+	transition: 0.4s;
 }
 
 header {
@@ -150,7 +177,7 @@ main h3 {
 	line-height: 42px;
 	margin: 20px 0;
 }
-main .padding{
+main .padding {
 	padding-top: 100px !important;
 }
 main .about {
@@ -296,6 +323,7 @@ main .skills {
 	align-items: center;
 }
 .skills-container li {
+	position: relative;
 	display: flex;
 	margin: 15px 25px;
 	width: 150px;
@@ -305,6 +333,20 @@ main .skills {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+.skills-container p{
+	display: none;
+	position: absolute;
+	top: -38%;
+	color: var(--Tt-white);
+	background-color: var(--Cd-black);
+	border: 1px solid var(--Bd-grey);
+	border-radius: 3px;
+	padding: 5px 14px;
+	margin: 5px 0;
+	font-size: 20px;
+    line-height: 30px;
+	text-transform: uppercase;
 }
 
 footer {
@@ -321,6 +363,140 @@ footer h5 {
 	font-size: 16px;
 	line-height: 21px;
 }
-footer a{
+footer a {
 	color: var(--green) !important;
+}
+
+menu {
+	z-index: 1;
+	background-color: rgba(33, 33, 33, 0.97);
+	top: 0;
+	right: 0;
+	width: 60%;
+	height: 100vh;
+	position: fixed;
+	transform: translateX(100%);
+	transition: 0.4s ease;
+}
+.menu-active {
+	display: block;
+	transform: translateX(0%);
+}
+.sidebar-container {
+	margin: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.sidebar-container a {
+	margin: 15px 0;
+	max-width: 180px;
+	padding: 0 5px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 25px;
+	color: var(--Tt-white);
+	border: 2px solid var(--Bd-grey);
+	background-color: rgba(23, 23, 23, 0.8);
+	padding: 14px 25px;
+}
+
+.flutter {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	background-color: #00df5e;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.flutter:active{
+	filter: brightness(50%);
+}
+.arrow {
+	background-color: #171717;
+	width: 25px;
+	height: 5px;
+	margin: 2px 0;
+}
+.arrow01{
+	transform: rotate(45deg) translateY(-5.1px) translateX(5px);
+}
+.arrow02{
+	transform: rotate(-45deg) translateY(-10px) translateX(-0px);
+}
+@media only screen and (min-width: 650px){
+	.flutter:hover{
+		filter: brightness(80%);
+	}
+	.flutter:active{
+		filter: brightness(50%);
+	}
+}
+@media only screen and (max-width: 900px) {
+	body {
+		padding: 0;
+	}
+	nav {
+		padding-inline: 15px;
+	}
+	header {
+		padding-inline: 15px;
+		margin-top: 50px;
+		flex-direction: column-reverse;
+	}
+	header img {
+		margin: 20px 0;
+	}
+	main {
+		padding-inline: 15px;
+		margin-top: 0px;
+	}
+	main .padding {
+		padding-top: 50px !important;
+	}
+	.information-container li {
+		margin: 10px 0;
+	}
+	.skills-container li {
+		margin: 15px 15px;
+	}
+}
+@media only screen and (max-width: 650px) {
+	nav .menu-container {
+		display: none;
+	}
+	nav .burguer-container {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	header img {
+		width: 370px;
+	}
+	.btn-container button {
+		margin-bottom: 15px;
+	}
+	.skills-container li {
+		margin: 15px 10px;
+	}
+	.skills-container li:hover {
+		border: 1px solid var(--green);
+	}
+}
+@media only screen and (max-width: 375px) {
+	.about .information-container {
+		justify-content: center;
+	}
+	.projects-container img {
+		width: 275px;
+		height: 155px;
+	}
 }
