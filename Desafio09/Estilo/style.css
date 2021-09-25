@@ -89,6 +89,7 @@ nav {
 nav h2 {
 	font-size: 26px;
 	line-height: 34px;
+	cursor: default;
 }
 .menu-container a {
 	margin-left: 30px;
@@ -249,13 +250,14 @@ main .projects {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transition: 0.3s ease;
 }
 .projects-container div {
 	text-align: start;
 }
 .projects-container img {
 	width: 300px;
-	height: 169px;
+	aspect-ratio: 16 / 9;
 	background: var(--Bg-black);
 	border: 1px solid var(--Bd-grey);
 	margin-bottom: 15px;
@@ -334,7 +336,7 @@ main .skills {
 	align-items: center;
 	justify-content: center;
 }
-.skills-container p{
+.skills-container p {
 	display: none;
 	position: absolute;
 	top: -38%;
@@ -345,7 +347,7 @@ main .skills {
 	padding: 5px 14px;
 	margin: 5px 0;
 	font-size: 20px;
-    line-height: 30px;
+	line-height: 30px;
 	text-transform: uppercase;
 }
 
@@ -416,7 +418,7 @@ menu {
 	align-items: center;
 	cursor: pointer;
 }
-.flutter:active{
+.flutter:active {
 	filter: brightness(50%);
 }
 .arrow {
@@ -425,18 +427,23 @@ menu {
 	height: 5px;
 	margin: 2px 0;
 }
-.arrow01{
+.arrow01 {
 	transform: rotate(45deg) translateY(-5.1px) translateX(5px);
 }
-.arrow02{
+.arrow02 {
 	transform: rotate(-45deg) translateY(-10px) translateX(-0px);
 }
-@media only screen and (min-width: 650px){
-	.flutter:hover{
+@media only screen and (min-width: 650px) {
+	.flutter:hover {
 		filter: brightness(80%);
 	}
-	.flutter:active{
+	.flutter:active {
 		filter: brightness(50%);
+	}
+	.projects-container li:hover {
+		cursor: pointer;
+		z-index: 1;
+		transform: scale(1.3);
 	}
 }
 @media only screen and (max-width: 900px) {
