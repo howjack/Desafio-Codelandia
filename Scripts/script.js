@@ -32,6 +32,11 @@ const projects = [
         link: `./Desafio06`
     },
     {
+        nr: '07',
+        name: 'Portfólio',
+        link: `./Desafio07`
+    },
+    {
         nr: '09',
         name: 'Portfólio',
         link: `./Desafio09`
