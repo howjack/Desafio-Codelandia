@@ -33,7 +33,7 @@ const projects = [
     },
     {
         nr: '07',
-        name: 'Portfólio',
+        name: 'Valorant',
         link: `./Desafio07`
     },
     {
