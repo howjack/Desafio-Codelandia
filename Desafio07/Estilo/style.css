@@ -182,6 +182,7 @@ footer {
 	filter: blur(120px);
 	width: 250px;
 	height: 150px;
+	z-index: -2;
 }
 .box1 {	
 	left: 150px;
