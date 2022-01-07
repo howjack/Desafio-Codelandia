@@ -92,7 +92,7 @@ header {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 22px;
+	font-size: 16px;
 }
 
 main {
@@ -174,4 +174,24 @@ footer {
 
 .socials img {
 	margin: 0 10px;
+}
+
+.box {
+	position: absolute;
+	background: #ff4656;
+	filter: blur(120px);
+	width: 250px;
+	height: 150px;
+}
+.box1 {	
+	left: 150px;
+	top: 150px;
+}
+.box2{
+	left: 800px;
+	top: 700px;
+}
+.box3{
+	right: 50px;
+	top: 0px;
 }
