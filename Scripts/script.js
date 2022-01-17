@@ -37,6 +37,11 @@ const projects = [
         link: `./Desafio07`
     },
     {
+        nr: '08',
+        name: 'CodeEmoji',
+        link: `./Desafio08`
+    },
+    {
         nr: '09',
         name: 'Portfólio',
         link: `./Desafio09`
