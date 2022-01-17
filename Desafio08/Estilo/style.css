@@ -162,20 +162,25 @@ footer li h3 {
 	margin: 10px 0;
 }
 
+.emoji-container{
+    max-width: 1440px;
+    height: auto;
+}
+
 .emoji {
 	position: absolute;
 	z-index: -1;
 }
 .emoji1 {
-	left: 22%;
+	left: 15%;
 	top: 120px;
 }
 .emoji2 {
-	right: 22%;
+	right: 15%;
 	top: 140px;
 }
 .emoji3 {
-	right: 20%;
+	right: 10%;
 	top: 500px;
 }
 .emoji4 {
@@ -184,6 +189,6 @@ footer li h3 {
 	top: 600px;
 }
 .emoji5 {
-	left: 20%;
+	left: 10%;
 	top: 500px;
 }
