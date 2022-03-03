@@ -109,7 +109,7 @@ main {
 	font-size: 60px;
 	font-family: Druk Wide Bold;
 	color: transparent;
-	-webkit-text-stroke: 2px white;
+	-webkit-text-stroke: 3px white;
 	font-weight: bold;
 	line-height: 75px;
 	letter-spacing: -2px;
